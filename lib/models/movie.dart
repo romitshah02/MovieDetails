@@ -41,7 +41,7 @@ class Movie {
       type: map['type'] as String,
       language: map['language'] as String,
       runtime: map['runtime'] != null ? map['runtime'] as int : null,
-      image: map['image']['original'] as String,
+      image:  map['image'] != null ? map['image']['original'] as String : null,
       summary: map['summary'] as String,
       rating: map['rating']['average'] != null
           ? map['rating']['average'] as num
